@@ -31,11 +31,7 @@
                   <li
                     class="list-group-item d-flex justify-content-between align-items-center border-start-0 border-top-0 border-end-0 border-bottom rounded-0 mb-2">
                     <div class="d-flex align-items-center">
-                        <% if (todo.completed) { %>
-                          <s><%= todo.name %></s>
-                        <% } else { %>
                           <%= todo.name %>
-                        <% } %>
                     </div>
                     <a href="/delete-todo/<%= todo._id %>" data-mdb-tooltip-init title="Remove item">
                       <i class="fas fa-times text-primary"></i>
